@@ -3,9 +3,7 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        //Le but c'est qu'un joueur a 5 essais pour deviner le nombre que l'ordinateur a choisi
-        //entre 0 et 30?
-        //Il vous reste " + essaisRestants + "essais restants."
+        //Le but c'est qu'un joueur a 5 essais pour deviner le nombre que l'ordinateur a choisi entre 0 et 30 (exclus)
         Scanner scanner = new Scanner(System.in);
         Random objGenerator = new Random();
 
@@ -34,23 +32,17 @@ public class Main {
 
             } else {
                 System.out.println("Veuillez indiquer un nombre entre 0 et 30.");
-                //scanner.nextInt();
+        
             }
 
-                }
+        }
         if (essaisRestants == 0){
             System.out.println("Vous avez perdu! Le nombre choisi par l'ordinateur était: " + nombreOrdi + ".");
-            }
-
-//        System.out.println("Souhaitez-vous rejouer? (oui/non)");
-//        String rejouer = scanner.nextLine().toLowerCase();
-//
-//        if(!rejouer.equals("oui")){
-//        break;
-
         }
 
-        }
+    }
+
+}
 
 
      
